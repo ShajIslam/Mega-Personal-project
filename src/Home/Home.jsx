@@ -2,6 +2,7 @@ import img1 from '../assets/devilgirl.png';
 import img2 from '../assets/flowers.png';
 import img3 from '../assets/megapersonals.png';
 import img4 from '../assets/meetnow.png';
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
@@ -10,7 +11,7 @@ const Home = () => {
         <div className='flex items-center justify-center mt-2'>
             <div className='w-1/5 text-center'>
         <img  className='w-52 relative' src={img1} alt=""/>
-        <button className='bg-[#58c2fd] font-bold text-lg px-8 py-1 text-white rounded absolute top-[45%] left-[28%] shadow'>POST NOW</button>
+        <Link to={'/login'}><button className='bg-[#58c2fd] font-bold text-lg px-8 py-1 text-white rounded absolute top-[45%] left-[28%] shadow'>POST NOW</button></Link>
         <div className='text-center space-y-2'>
         <p className='mt-10 text-red-800 font-bold'>Select Location</p>
         <a className='underline text-[#fcb9e3] font-semibold text-sm' href="">change location</a>
